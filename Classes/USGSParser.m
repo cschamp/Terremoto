@@ -130,6 +130,7 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 			NSString *magString = [[[components objectAtIndex:0] componentsSeparatedByString:@" "] objectAtIndex:1];
 			NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
 			self.currentEarthquake.magnitude = [formatter numberFromString:magString];
+			NSLog([self.currentEarthquake.magnitude description]);
 			self.currentEarthquake.place = [components objectAtIndex:1];
 			[formatter release];
 		}

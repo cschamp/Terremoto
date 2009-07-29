@@ -10,12 +10,15 @@
 #import <MapKit/MapKit.h>
 #import "Earthquake.h"
 
-
 @interface EarthquakeAnnotation : NSObject <MKAnnotation> {
 	CLLocationCoordinate2D coordinate;
+	NSString *title;
+	NSString *subtitle;
 }
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 
 - (id) initWithEarthquake:(Earthquake *)earthquake;
 
