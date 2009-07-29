@@ -20,7 +20,10 @@
 		coordinate.longitude = earthquake.location.coordinate.longitude;
 		self.title = earthquake.place;
 		// XXX use NSDateFormatter
-		self.subtitle = [NSString stringWithFormat:@"%@ M%@", earthquake.lastUpdate, earthquake.magnitude];
+		NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
+		[formatter setDateStyle:NSDateFormatterMediumStyle];
+		[formatter setTimeStyle:NSDateFormatterMediumStyle];
+		self.subtitle = [NSString stringWithFormat:@"M%@ // %@", earthquake.magnitude, [formatter stringFromDate:earthquake.lastUpdate]];
 	}
 	return self;
 }
