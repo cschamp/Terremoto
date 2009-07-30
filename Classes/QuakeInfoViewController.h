@@ -13,6 +13,7 @@
 
 @interface QuakeInfoViewController : UIViewController <MKMapViewDelegate, USGSParserDelegate> {
   MKMapView *mapView;
+  BOOL initialZoom;
 }
 
 @property(nonatomic, retain) IBOutlet MKMapView *mapView;
