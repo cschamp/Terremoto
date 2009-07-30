@@ -14,11 +14,13 @@
 	CLLocationCoordinate2D coordinate;
 	NSString *title;
 	NSString *subtitle;
+	Earthquake *earthquake;
 }
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) Earthquake *earthquake;
 
 - (id) initWithEarthquake:(Earthquake *)earthquake;
 

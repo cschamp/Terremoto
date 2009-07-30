@@ -13,17 +13,20 @@
 @synthesize coordinate;
 @synthesize title;
 @synthesize subtitle;
+@synthesize earthquake;
 
-- (id) initWithEarthquake:(Earthquake *)earthquake {
+- (id) initWithEarthquake:(Earthquake *)quake {
 	if (self = [super init]) {
-		coordinate.latitude = earthquake.location.coordinate.latitude;
-		coordinate.longitude = earthquake.location.coordinate.longitude;
-		self.title = earthquake.place;
+		coordinate.latitude = quake.location.coordinate.latitude;
+		coordinate.longitude = quake.location.coordinate.longitude;
+		self.title = quake.place;
 
 		NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
 		[formatter setDateStyle:NSDateFormatterMediumStyle];
 		[formatter setTimeStyle:NSDateFormatterMediumStyle];
-		self.subtitle = [NSString stringWithFormat:@"M%@ // %@", earthquake.magnitude, [formatter stringFromDate:earthquake.lastUpdate]];
+		// XXX I think this leaks, since subtitle is copied. Double check that logic.
+		self.subtitle = [NSString stringWithFormat:@"M%@ // %@", quake.magnitude, [formatter stringFromDate:quake.lastUpdate]];
+		self.earthquake = quake;
 	}
 	return self;
 }
