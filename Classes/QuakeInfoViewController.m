@@ -59,7 +59,6 @@
 - (void)addEarthquake:(Earthquake *)earthquake {
 	EarthquakeAnnotation *annot = [[[EarthquakeAnnotation alloc] initWithEarthquake:earthquake] autorelease];
 	[self.mapView addAnnotation:annot];
-	NSLog([earthquake description]);
 }
 
 - (void)parserFinished {
@@ -101,6 +100,7 @@
 	[(MKPinAnnotationView *)annotationView setAnimatesDrop:NO];
 	// setCanShowCallout:YES enables display of the info box when the pin is selected
 	[annotationView setCanShowCallout:YES];
+    [annotationView setRightCalloutAccessoryView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
 	return annotationView;
 }
 
