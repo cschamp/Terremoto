@@ -104,4 +104,11 @@
 	return annotationView;
 }
 
+- (void)mapView:(MKMapView *)view annotationView:(MKAnnotationView *)annotationView calloutAccessoryControlTapped:(UIControl *)control {
+	EarthquakeAnnotation *annot = (EarthquakeAnnotation *) [annotationView annotation];
+	NSURL *url = [NSURL URLWithString:annot.earthquake.detailsURL];
+	// XXX Change this to open in a UIWebView inside the app.
+	[[UIApplication sharedApplication] openURL:url];
+}
+
 @end
