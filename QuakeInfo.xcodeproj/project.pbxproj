@@ -225,7 +225,6 @@
 				GCC_PREFIX_HEADER = QuakeInfo_Prefix.pch;
 				INFOPLIST_FILE = "QuakeInfo-Info.plist";
 				PRODUCT_NAME = QuakeInfo;
-				SDKROOT = iphonesimulator3.0;
 			};
 			name = Debug;
 		};
