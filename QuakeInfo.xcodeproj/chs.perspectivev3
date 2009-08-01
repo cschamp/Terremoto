@@ -290,6 +290,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
@@ -299,8 +300,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>2</integer>
+									<integer>23</integer>
+									<integer>18</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -336,7 +337,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>AA57D1CC101D10BB000D9456</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DetailsViewController.m</string>
+								<string>QuakeInfo-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -344,14 +345,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>AA57D1CD101D10BB000D9456</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DetailsViewController.m</string>
+										<string>QuakeInfo-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>AA49D7F11023DAEE003AB1DC</string>
+										<string>AA49D8101023F285003AB1DC</string>
 										<key>history</key>
 										<array>
-											<string>AA57D1CE101D10BB000D9456</string>
 											<string>AA57D249101D24AE000D9456</string>
 											<string>AA57D308101EBFB0000D9456</string>
 											<string>AA57D355101F4C89000D9456</string>
@@ -367,8 +367,9 @@
 											<string>AA49D7771022B566003AB1DC</string>
 											<string>AA49D7781022B566003AB1DC</string>
 											<string>AA49D7E11023D65B003AB1DC</string>
-											<string>AA49D7ED1023DAED003AB1DC</string>
-											<string>AA49D7EE1023DAED003AB1DC</string>
+											<string>AA49D80A1023F284003AB1DC</string>
+											<string>AA49D80B1023F284003AB1DC</string>
+											<string>AA49D80C1023F284003AB1DC</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -403,6 +404,10 @@
 											<string>AA49D7E41023D65B003AB1DC</string>
 											<string>AA49D7E51023D65B003AB1DC</string>
 											<string>AA49D7EF1023DAED003AB1DC</string>
+											<string>AA49D7F71023DDDE003AB1DC</string>
+											<string>AA49D7F81023DDDE003AB1DC</string>
+											<string>AA49D80D1023F284003AB1DC</string>
+											<string>AA49D80E1023F284003AB1DC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -455,7 +460,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1604, 1066}}</string>
+										<string>{{10, 27}, {1604, 301}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -703,7 +708,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>270785262.26465899</real>
+	<real>270791301.23394901</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
