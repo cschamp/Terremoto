@@ -24,6 +24,12 @@
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	NSLog(@"didFailLoadWithError");
+	// XXX Do something. [schamp 20090801]
+}
+
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -44,7 +50,6 @@
 	// e.g. self.myOutlet = nil;
 	self.webView = nil;
 }
-
 
 - (void)dealloc {
     [super dealloc];
