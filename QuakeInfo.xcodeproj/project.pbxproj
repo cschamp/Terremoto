@@ -225,6 +225,7 @@
 				GCC_PREFIX_HEADER = QuakeInfo_Prefix.pch;
 				INFOPLIST_FILE = "QuakeInfo-Info.plist";
 				PRODUCT_NAME = QuakeInfo;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
 		};
@@ -237,6 +238,7 @@
 				GCC_PREFIX_HEADER = QuakeInfo_Prefix.pch;
 				INFOPLIST_FILE = "QuakeInfo-Info.plist";
 				PRODUCT_NAME = QuakeInfo;
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};
