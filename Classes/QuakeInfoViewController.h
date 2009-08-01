@@ -20,7 +20,6 @@
 
 - (void)zoomToCurrentLocation;
 - (void)addEarthquake:(Earthquake *)earthquake;
-- (void)parserFinished;
 
 @end
 

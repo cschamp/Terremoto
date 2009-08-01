@@ -8,7 +8,6 @@
 
 #import "Earthquake.h"
 
-
 @implementation Earthquake
 
 @synthesize detailsURL;

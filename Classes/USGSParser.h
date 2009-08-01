@@ -15,7 +15,6 @@
 @protocol USGSParserDelegate
 
 - (void)addEarthquake:(Earthquake *)earthquake;
-- (void)parserFinished;
 
 @end
 

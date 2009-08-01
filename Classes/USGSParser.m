@@ -11,9 +11,6 @@
 #import "Earthquake.h"
 #import "USGSParser.h"
 
-// This framework was imported so we could use the kCFURLErrorNotConnectedToInternet error code.
-//#import <CFNetwork/CFNetwork.h>
-
 static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/7day-M2.5.xml";
 
 @implementation USGSParser
@@ -34,10 +31,11 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 	[super dealloc];
 }
 
+#pragma mark Managing the Parser Operations
+
 - (NSOperationQueue *) opQueue {
 	if (self.opQueue == nil) {
 		self.opQueue = [[NSOperationQueue alloc] init];
-		self.opQueue.maxConcurrentOperationCount = 1;
 	}
 	return self.opQueue;
 }
@@ -74,14 +72,11 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 }
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
-	if ([(id)self.delegate respondsToSelector:@selector(parserFinished)]) {
-		[(id)self.delegate performSelectorOnMainThread:@selector(parserFinished)
-											withObject:nil
-										 waitUntilDone:NO];
-	}
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	[self autorelease];
 }
+
+#pragma mark Parsing the Data
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
@@ -130,7 +125,6 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 			NSString *magString = [[[components objectAtIndex:0] componentsSeparatedByString:@" "] objectAtIndex:1];
 			NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
 			self.currentEarthquake.magnitude = [formatter numberFromString:magString];
-			NSLog([self.currentEarthquake.magnitude description]);
 			self.currentEarthquake.place = [components objectAtIndex:1];
 			[formatter release];
 		}

@@ -62,11 +62,6 @@
 	[self.mapView addAnnotation:annot];
 }
 
-- (void)parserFinished {
-	// XXX If there ends up being no use for this delegate method, delete it and the protocol.
-	NSLog(@"Parser finished");
-}
-
 #pragma mark MKMapView Delegates
 
 #define	quakeAnnotationID @"quakeAnnotationID"

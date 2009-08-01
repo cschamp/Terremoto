@@ -14,7 +14,6 @@
 @synthesize window;
 @synthesize viewController;
 
-
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
     // Override point for customization after app launch    
@@ -22,12 +21,10 @@
     [window makeKeyAndVisible];
 }
 
-
 - (void)dealloc {
     [viewController release];
     [window release];
     [super dealloc];
 }
-
 
 @end
