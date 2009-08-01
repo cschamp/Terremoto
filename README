@@ -6,7 +6,7 @@ Another similar application is from Bill Dudney's screencast and sample code at 
 
 Among the ways my app, QuakeInfo, differs from Bill's is that QuakeInfo displays all earthquake events fetched from the USGS site, not just the 50 or 100 nearest to the user's location. This requires changes in the way QuakeInfo zooms to the user's current location, among other things. My application also displays details about the earthquake in a UIWebView within the application, whereas Bill's demo app displayed this information by launching Safari on a USGS URL.
 
-I plan to show earthquakes on the map using a custom view that resembles the maps on the USGS web site itself, where events are displayed not as color-coded pins, but as squares of varying sizes and colors. I also want to add a control to allow the user to zoom to the current location at any time. Another feature I plan to add is one that will show the most recent earthquakes first, perhaps making a recent earthquake the initial zoom location, or perhaps adding a view that shows the earthquakes in a list sorted by time of the event or by magnitude.
+I plan to show earthquakes on the map using a custom annotation view to resemble the maps on the USGS web site itself, where events are displayed not as color-coded pins, but as squares of varying sizes and colors. I also want to add a control to allow the user to zoom to the current location at any time. Another feature I plan to add is one that will show the most recent earthquakes first, perhaps making a recent earthquake the initial zoom location, or perhaps adding a view that shows the earthquakes in a list sorted by time of the event or by magnitude.
 
 --
 Craig Schamp
