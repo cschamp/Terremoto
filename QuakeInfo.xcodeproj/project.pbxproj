@@ -225,7 +225,7 @@
 				GCC_PREFIX_HEADER = QuakeInfo_Prefix.pch;
 				INFOPLIST_FILE = "QuakeInfo-Info.plist";
 				PRODUCT_NAME = QuakeInfo;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphonesimulator3.0;
 			};
 			name = Debug;
 		};
@@ -251,7 +251,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphonesimulator3.0;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
