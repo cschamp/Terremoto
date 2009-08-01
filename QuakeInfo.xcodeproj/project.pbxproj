@@ -15,6 +15,9 @@
 		2899E5220DE3E06400AC0155 /* QuakeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuakeInfoViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* QuakeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuakeInfoViewController.m */; };
+		AA49D6DD1021DF8D003AB1DC /* README in Resources */ = {isa = PBXBuildFile; fileRef = AA49D6DC1021DF8D003AB1DC /* README */; };
+		AA49D78E1023CFDE003AB1DC /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49D78C1023CFDE003AB1DC /* DetailsViewController.m */; };
+		AA49D78F1023CFDE003AB1DC /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */; };
 		AA57D1A5101D103C000D9456 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA57D1A4101D103C000D9456 /* CoreLocation.framework */; };
 		AA57D1AB101D1042000D9456 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA57D1AA101D1042000D9456 /* MapKit.framework */; };
 		AA57D281101D28D5000D9456 /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D280101D28D5000D9456 /* Earthquake.m */; };
@@ -36,6 +39,10 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* QuakeInfo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuakeInfo_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* QuakeInfo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QuakeInfo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AA49D6DC1021DF8D003AB1DC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		AA49D78C1023CFDE003AB1DC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsViewController.xib; path = Classes/DetailsViewController.xib; sourceTree = "<group>"; };
 		AA57D1A4101D103C000D9456 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AA57D1AA101D1042000D9456 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AA57D27F101D28D5000D9456 /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 				AA57D283101D28F0000D9456 /* USGSParser.m */,
 				AA57D321101F4744000D9456 /* EarthquakeAnnotation.h */,
 				AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */,
+				AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */,
+				AA49D78C1023CFDE003AB1DC /* DetailsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +99,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				AA49D6DC1021DF8D003AB1DC /* README */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -111,6 +121,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */,
 				2899E5210DE3E06400AC0155 /* QuakeInfoViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* QuakeInfo-Info.plist */,
@@ -174,6 +185,8 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* QuakeInfoViewController.xib in Resources */,
+				AA49D6DD1021DF8D003AB1DC /* README in Resources */,
+				AA49D78F1023CFDE003AB1DC /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +203,7 @@
 				AA57D281101D28D5000D9456 /* Earthquake.m in Sources */,
 				AA57D284101D28F0000D9456 /* USGSParser.m in Sources */,
 				AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */,
+				AA49D78E1023CFDE003AB1DC /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

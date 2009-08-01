@@ -7,6 +7,7 @@
 //
 
 #import "QuakeInfoViewController.h"
+#import "DetailsViewController.h"
 
 @implementation QuakeInfoViewController
 
@@ -107,8 +108,9 @@
 - (void)mapView:(MKMapView *)view annotationView:(MKAnnotationView *)annotationView calloutAccessoryControlTapped:(UIControl *)control {
 	EarthquakeAnnotation *annot = (EarthquakeAnnotation *) [annotationView annotation];
 	NSURL *url = [NSURL URLWithString:annot.earthquake.detailsURL];
-	// XXX Change this to open in a UIWebView inside the app.
-	[[UIApplication sharedApplication] openURL:url];
+	DetailsViewController *detailsViewControl = [[[DetailsViewController alloc] init] autorelease];
+	detailsViewControl.url = url;
+	[self presentModalViewController:detailsViewControl animated:YES];
 }
 
 @end
