@@ -16,4 +16,14 @@
 @synthesize lastUpdate;
 @synthesize location;
 
+- (void)dealloc {
+	self.detailsURL = nil;
+	self.magnitude = nil;
+	self.place = nil;
+	self.lastUpdate = nil;
+	self.location = nil;
+    [super dealloc];
+}
+
+
 @end

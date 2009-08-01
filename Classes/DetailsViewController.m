@@ -52,6 +52,11 @@
 }
 
 - (void)dealloc {
+	self.webView = nil;
+	self.toolBar = nil;
+	self.url = nil;
+	//[self.toolBar release];
+	//[self.url release];
     [super dealloc];
 }
 

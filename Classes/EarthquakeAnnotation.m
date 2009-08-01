@@ -31,4 +31,11 @@
 	return self;
 }
 
+- (void)dealloc {
+	self.title = nil;
+	self.subtitle = nil;
+	self.earthquake = nil;
+    [super dealloc];
+}
+
 @end

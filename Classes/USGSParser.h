@@ -19,7 +19,6 @@
 @end
 
 @interface USGSParser : NSObject {
-	NSMutableArray *earthquakeList;
 	id<USGSParserDelegate> delegate;
 	NSOperationQueue *opQueue;
 	Earthquake *currentEarthquake;

@@ -28,6 +28,7 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 	self.currentEarthquake = nil;
 	self.propertyValue = nil;
  	self.delegate = nil;
+	self.opQueue = nil;
 	[super dealloc];
 }
 

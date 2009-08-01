@@ -42,6 +42,7 @@
 
 
 - (void)dealloc {
+	self.mapView = nil;
     [super dealloc];
 }
 
