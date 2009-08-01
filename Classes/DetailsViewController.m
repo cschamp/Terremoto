@@ -28,7 +28,12 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 	[self.webView loadRequest:[[[NSURLRequest alloc] initWithURL:self.url] autorelease]];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)view {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 /*
