@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface DetailsViewController : UIViewController <UIWebViewDelegate> {
+@interface DetailsViewController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 	UIWebView *webView;
 	UIToolbar *toolBar;
 	NSURL *url;
@@ -20,5 +19,6 @@
 @property (nonatomic, retain) NSURL *url;
 
 - (IBAction)doneButtonAction:(id)sender;
+- (IBAction)actionButtonAction:(id)sender;
 
 @end

@@ -6,6 +6,7 @@
 //  Copyright 2009 Craig Schamp. All rights reserved.
 //
 
+#import <MobileCoreServices/UTCoreTypes.h>
 #import "DetailsViewController.h"
 
 @implementation DetailsViewController
@@ -46,8 +47,6 @@
 }
 
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 	self.webView = nil;
 }
 
@@ -55,8 +54,6 @@
 	self.webView = nil;
 	self.toolBar = nil;
 	self.url = nil;
-	//[self.toolBar release];
-	//[self.url release];
     [super dealloc];
 }
 
@@ -64,6 +61,24 @@
 	[self.webView stopLoading];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	[self dismissModalViewControllerAnimated:YES]; 
+}
+
+- (IBAction)actionButtonAction:(id)sender {
+	NSLog(@"actionButton");
+	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Details URL Action"
+                                                    delegate:self
+                                                    cancelButtonTitle:@"Cancel"
+                                                    destructiveButtonTitle:@"Open in Safari"
+                                                    otherButtonTitles:@"Copy URL", nil];
+	[actionSheet showInView:self.view];
+	[actionSheet release];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == [actionSheet destructiveButtonIndex])
+        [[UIApplication sharedApplication] openURL:self.url];
+    else if (buttonIndex != [actionSheet cancelButtonIndex])	// XXX Should check specifically for Copy button. [schamp 20090801]
+        [[UIPasteboard generalPasteboard] setValue:self.url forPasteboardType:(NSString *)kUTTypeURL];	// XXX NSString cast shouldn't be required. [schamp 20090801]
 }
 
 @end

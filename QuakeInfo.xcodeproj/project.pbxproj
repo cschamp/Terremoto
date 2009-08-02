@@ -24,6 +24,7 @@
 		AA57D281101D28D5000D9456 /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D280101D28D5000D9456 /* Earthquake.m */; };
 		AA57D284101D28F0000D9456 /* USGSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D283101D28F0000D9456 /* USGSParser.m */; };
 		AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */; };
+		AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA98155E1025148000FBAE84 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		AA57D283101D28F0000D9456 /* USGSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USGSParser.m; sourceTree = "<group>"; };
 		AA57D321101F4744000D9456 /* EarthquakeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeAnnotation.h; sourceTree = "<group>"; };
 		AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeAnnotation.m; sourceTree = "<group>"; };
+		AA98155E1025148000FBAE84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				AA57D1A5101D103C000D9456 /* CoreLocation.framework in Frameworks */,
 				AA57D1AB101D1042000D9456 /* MapKit.framework in Frameworks */,
+				AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA98155E1025148000FBAE84 /* MobileCoreServices.framework */,
 				AA57D1A4101D103C000D9456 /* CoreLocation.framework */,
 				AA57D1AA101D1042000D9456 /* MapKit.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
