@@ -64,7 +64,6 @@
 }
 
 - (IBAction)actionButtonAction:(id)sender {
-	NSLog(@"actionButton");
 	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Details URL Action"
                                                     delegate:self
                                                     cancelButtonTitle:@"Cancel"

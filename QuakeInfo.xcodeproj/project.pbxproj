@@ -25,6 +25,8 @@
 		AA57D284101D28F0000D9456 /* USGSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D283101D28F0000D9456 /* USGSParser.m */; };
 		AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */; };
 		AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA98155E1025148000FBAE84 /* MobileCoreServices.framework */; };
+		AA9815B610251F3700FBAE84 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9815B510251F3700FBAE84 /* Entitlements.plist */; };
+		AA9815D710253CE000FBAE84 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = AA9815D610253CE000FBAE84 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		AA57D321101F4744000D9456 /* EarthquakeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeAnnotation.h; sourceTree = "<group>"; };
 		AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeAnnotation.m; sourceTree = "<group>"; };
 		AA98155E1025148000FBAE84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AA9815B510251F3700FBAE84 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		AA9815D610253CE000FBAE84 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				AA49D6DC1021DF8D003AB1DC /* README */,
+				AA9815D610253CE000FBAE84 /* README.markdown */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				AA9815B510251F3700FBAE84 /* Entitlements.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 				AA49D6DD1021DF8D003AB1DC /* README in Resources */,
 				AA49D78F1023CFDE003AB1DC /* DetailsViewController.xib in Resources */,
 				AA49D8071023F234003AB1DC /* icon_quake.png in Resources */,
+				AA9815B610251F3700FBAE84 /* Entitlements.plist in Resources */,
+				AA9815D710253CE000FBAE84 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +253,35 @@
 			};
 			name = Release;
 		};
+		AA9815AC10251E6000FBAE84 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1;
+			};
+			name = Distribution;
+		};
+		AA9815AD10251E6000FBAE84 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Craig Schamp";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuakeInfo_Prefix.pch;
+				INFOPLIST_FILE = "QuakeInfo-Info.plist";
+				PRODUCT_NAME = QuakeInfo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E30AD342-5909-40D7-8BBE-DF5ACA124533";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Distribution;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,6 +317,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				AA9815AD10251E6000FBAE84 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -289,6 +327,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				AA9815AC10251E6000FBAE84 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
