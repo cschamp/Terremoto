@@ -44,7 +44,7 @@
 		AA49D6DC1021DF8D003AB1DC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		AA49D78C1023CFDE003AB1DC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
-		AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsViewController.xib; path = Classes/DetailsViewController.xib; sourceTree = "<group>"; };
+		AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		AA49D8061023F234003AB1DC /* icon_quake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_quake.png; sourceTree = "<group>"; };
 		AA57D1A4101D103C000D9456 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AA57D1AA101D1042000D9456 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
