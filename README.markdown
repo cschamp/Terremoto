@@ -3,9 +3,7 @@ QuakeInfo
 
 QuakeInfo is a sample iPhone application that I wrote as an exercise in iPhone programming. It has given me exposure to Objective-C 2.0, which I can't use in my day job, where we need to support older Mac OS X platforms unsupported by Obj-C 2.0. QuakeInfo also gives me a chance to learn about iPhone programming. Although I use Cocoa at work, I don't write iPhone code, and, as mentioned above, supporting older Mac OS X versions means that I don't often have a chance to use the latest features in Cocoa. 
 
-[![](http://farm4.static.flickr.com/3504/3779173209_0dab0bcf6f.jpg)](http://farm4.static.flickr.com/3504/3779173209_f20b6c0fa5_o.png)
-[![](http://farm4.static.flickr.com/3566/3779173249_914199a9a4.jpg)](http://farm4.static.flickr.com/3566/3779173249_07a6c21212_o.png)  
-
+[![](http://farm4.static.flickr.com/3566/3779173249_914199a9a4.jpg)](http://farm4.static.flickr.com/3566/3779173249_07a6c21212_o.png)
 [![](http://farm4.static.flickr.com/3470/3779173293_062292f34c.jpg)](http://farm4.static.flickr.com/3470/3779173293_721cbe7ea5_o.png)
 [![](http://farm4.static.flickr.com/3450/3779982324_60bb869592.jpg)](http://farm4.static.flickr.com/3450/3779982324_97d22cdc2e_o.png) 
 
