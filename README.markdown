@@ -1,3 +1,4 @@
+![][http://farm4.static.flickr.com/3465/3780079330_ff0a853cf9_o.png] 
 QuakeInfo
 =========
 
