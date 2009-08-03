@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'QuakeInfo' target in the 'QuakeInfo' project
+// Prefix header for all source files of the 'Terremoto' target in the 'Terremoto' project
 //
 
 #ifdef __OBJC__
