@@ -253,11 +253,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos3.1;
 			};
 			name = Distribution;
@@ -273,7 +274,7 @@
 				GCC_PREFIX_HEADER = Terremoto_Prefix.pch;
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E30AD342-5909-40D7-8BBE-DF5ACA124533";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "45E88434-5134-4EAE-826C-14CB3FD4CFA6";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Distribution;
