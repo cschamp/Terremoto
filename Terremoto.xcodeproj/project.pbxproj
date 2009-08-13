@@ -302,7 +302,7 @@
 				GCC_PREFIX_HEADER = Terremoto_Prefix.pch;
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "45E88434-5134-4EAE-826C-14CB3FD4CFA6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6923CE44-E819-4948-A776-2842529D2805";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Distribution;
