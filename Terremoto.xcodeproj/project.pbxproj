@@ -25,6 +25,8 @@
 		AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */; };
 		AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA98155E1025148000FBAE84 /* MobileCoreServices.framework */; };
 		AA9815B610251F3700FBAE84 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9815B510251F3700FBAE84 /* Entitlements.plist */; };
+		AAFB4C081083D32D00B429E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFB4C071083D32D00B429E2 /* Reachability.m */; };
+		AAFB4C0A1083D36100B429E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFB4C091083D36100B429E2 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,9 @@
 		AA98155E1025148000FBAE84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AA9815B510251F3700FBAE84 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		AA9815D610253CE000FBAE84 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		AAFB4C061083D32C00B429E2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AAFB4C071083D32D00B429E2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AAFB4C091083D36100B429E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 				AA57D1A5101D103C000D9456 /* CoreLocation.framework in Frameworks */,
 				AA57D1AB101D1042000D9456 /* MapKit.framework in Frameworks */,
 				AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */,
+				AAFB4C0A1083D36100B429E2 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AAFB4C061083D32C00B429E2 /* Reachability.h */,
+				AAFB4C071083D32D00B429E2 /* Reachability.m */,
 				1D3623240D0F684500981E51 /* QuakeInfoAppDelegate.h */,
 				1D3623250D0F684500981E51 /* QuakeInfoAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* QuakeInfoViewController.h */,
@@ -140,6 +148,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAFB4C091083D36100B429E2 /* SystemConfiguration.framework */,
 				AA98155E1025148000FBAE84 /* MobileCoreServices.framework */,
 				AA57D1A4101D103C000D9456 /* CoreLocation.framework */,
 				AA57D1AA101D1042000D9456 /* MapKit.framework */,
@@ -214,6 +223,7 @@
 				AA57D284101D28F0000D9456 /* USGSParser.m in Sources */,
 				AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */,
 				AA49D78E1023CFDE003AB1DC /* DetailsViewController.m in Sources */,
+				AAFB4C081083D32D00B429E2 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

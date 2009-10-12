@@ -171,6 +171,11 @@
 			AAFB4BEF1083D23700B429E2 /* PBXTextBookmark */ = AAFB4BEF1083D23700B429E2 /* PBXTextBookmark */;
 			AAFB4BF01083D23A00B429E2 /* PBXTextBookmark */ = AAFB4BF01083D23A00B429E2 /* PBXTextBookmark */;
 			AAFB4BF11083D23B00B429E2 /* PBXTextBookmark */ = AAFB4BF11083D23B00B429E2 /* PBXTextBookmark */;
+			AAFB4C031083D2BE00B429E2 /* PBXTextBookmark */ = AAFB4C031083D2BE00B429E2 /* PBXTextBookmark */;
+			AAFB4C431083D3A300B429E2 /* PBXTextBookmark */ = AAFB4C431083D3A300B429E2 /* PBXTextBookmark */;
+			AAFB4C441083D3A300B429E2 /* PBXTextBookmark */ = AAFB4C441083D3A300B429E2 /* PBXTextBookmark */;
+			AAFB4C451083D3A300B429E2 /* PBXBookmark */ = AAFB4C451083D3A300B429E2 /* PBXBookmark */;
+			AAFB4C461083D3A300B429E2 /* PBXTextBookmark */ = AAFB4C461083D3A300B429E2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = AA57D1A8101D103D000D9456 /* Source Control */;
 		userBuildSettings = {
@@ -206,7 +211,7 @@
 	};
 	AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1443, 843}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1443, 726}}";
 			sepNavSelRange = "{155, 13}";
 			sepNavVisRange = "{0, 577}";
 		};
@@ -664,6 +669,64 @@
 		rLoc = 155;
 		rType = 0;
 		vrLen = 577;
+		vrLoc = 0;
+	};
+	AAFB4C031083D2BE00B429E2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */;
+		name = "DetailsViewController.h: 9";
+		rLen = 13;
+		rLoc = 155;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 0;
+	};
+	AAFB4C061083D32C00B429E2 /* Reachability.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1443, 2394}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1851}";
+		};
+	};
+	AAFB4C071083D32D00B429E2 /* Reachability.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1443, 12033}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1851}";
+		};
+	};
+	AAFB4C431083D3A300B429E2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AA49D78B1023CFDE003AB1DC /* DetailsViewController.h */;
+		name = "DetailsViewController.h: 9";
+		rLen = 13;
+		rLoc = 155;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 0;
+	};
+	AAFB4C441083D3A300B429E2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAFB4C061083D32C00B429E2 /* Reachability.h */;
+		name = "Reachability.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1851;
+		vrLoc = 0;
+	};
+	AAFB4C451083D3A300B429E2 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = AAFB4C071083D32D00B429E2 /* Reachability.m */;
+	};
+	AAFB4C461083D3A300B429E2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AAFB4C071083D32D00B429E2 /* Reachability.m */;
+		name = "Reachability.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1851;
 		vrLoc = 0;
 	};
 }
