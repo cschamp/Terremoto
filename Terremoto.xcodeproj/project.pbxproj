@@ -243,7 +243,7 @@
 				GCC_PREFIX_HEADER = Terremoto_Prefix.pch;
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = Release;
 		};
@@ -257,7 +257,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = "App Store";
 		};
@@ -273,7 +273,7 @@
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = "App Store";
 		};
@@ -287,7 +287,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E24AA56C-73A8-4B9D-9D31-D30797752D6D";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = Distribution;
 		};
@@ -303,7 +303,7 @@
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E24AA56C-73A8-4B9D-9D31-D30797752D6D";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = Distribution;
 		};
@@ -316,7 +316,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator3.0;
+				SDKROOT = iphonesimulator3.1.2;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
@@ -330,7 +330,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos3.1.2;
 			};
 			name = Release;
 		};
