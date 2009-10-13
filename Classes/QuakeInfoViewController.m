@@ -15,9 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	USGSParser *parser = [USGSParser parser];
-	parser.delegate = self;
-	[parser parseForData];
+    USGSParser *parser = [USGSParser parser];
+    parser.delegate = self;
+    [parser parseForData];
 }
 
 /*

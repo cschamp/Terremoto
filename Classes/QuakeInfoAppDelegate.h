@@ -12,11 +12,11 @@
 
 @interface QuakeInfoAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    QuakeInfoViewController *viewController;
+    UIViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet QuakeInfoViewController *viewController;
+@property (nonatomic, retain) IBOutlet UIViewController *viewController;
 
 @end
 

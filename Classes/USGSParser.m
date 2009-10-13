@@ -94,7 +94,7 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 		if ([[attributeDict valueForKey:@"rel"] isEqualToString:@"alternate"]) {
 			NSString *link = [attributeDict valueForKey:@"href"];
 			self.currentEarthquake.detailsURL = 
-			[NSString stringWithFormat:@"http://earthquake.usgs.gov/%@", link];
+			[NSString stringWithFormat:@"http://earthquake.usgs.gov/%@", link];     // XXX Put constant DNS name in a header
 		}
 	} else if ([elementName isEqualToString:@"title"] || 
 		[elementName isEqualToString:@"updated"] ||

@@ -25,6 +25,8 @@
 		AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA57D322101F4744000D9456 /* EarthquakeAnnotation.m */; };
 		AA98155F1025148000FBAE84 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA98155E1025148000FBAE84 /* MobileCoreServices.framework */; };
 		AA9815B610251F3700FBAE84 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA9815B510251F3700FBAE84 /* Entitlements.plist */; };
+		AAA0F5FB1084DB47004C9956 /* NetAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA0F5FA1084DB47004C9956 /* NetAccessViewController.xib */; };
+		AAA0F6081084DF66004C9956 /* NetAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA0F6061084DF66004C9956 /* NetAccessViewController.m */; };
 		AAFB4C081083D32D00B429E2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFB4C071083D32D00B429E2 /* Reachability.m */; };
 		AAFB4C0A1083D36100B429E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFB4C091083D36100B429E2 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,9 @@
 		AA98155E1025148000FBAE84 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AA9815B510251F3700FBAE84 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		AA9815D610253CE000FBAE84 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		AAA0F5FA1084DB47004C9956 /* NetAccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetAccessViewController.xib; sourceTree = "<group>"; };
+		AAA0F6051084DF66004C9956 /* NetAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAccessViewController.h; sourceTree = "<group>"; };
+		AAA0F6061084DF66004C9956 /* NetAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAccessViewController.m; sourceTree = "<group>"; };
 		AAFB4C061083D32C00B429E2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		AAFB4C071083D32D00B429E2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		AAFB4C091083D36100B429E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -84,6 +89,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AAA0F6051084DF66004C9956 /* NetAccessViewController.h */,
+				AAA0F6061084DF66004C9956 /* NetAccessViewController.m */,
 				AAFB4C061083D32C00B429E2 /* Reachability.h */,
 				AAFB4C071083D32D00B429E2 /* Reachability.m */,
 				1D3623240D0F684500981E51 /* QuakeInfoAppDelegate.h */,
@@ -138,6 +145,7 @@
 			children = (
 				AA49D8061023F234003AB1DC /* icon_quake.png */,
 				AA49D78D1023CFDE003AB1DC /* DetailsViewController.xib */,
+				AAA0F5FA1084DB47004C9956 /* NetAccessViewController.xib */,
 				2899E5210DE3E06400AC0155 /* QuakeInfoViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Terremoto-Info.plist */,
@@ -206,6 +214,7 @@
 				AA49D78F1023CFDE003AB1DC /* DetailsViewController.xib in Resources */,
 				AA49D8071023F234003AB1DC /* icon_quake.png in Resources */,
 				AA9815B610251F3700FBAE84 /* Entitlements.plist in Resources */,
+				AAA0F5FB1084DB47004C9956 /* NetAccessViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +233,7 @@
 				AA57D323101F4744000D9456 /* EarthquakeAnnotation.m in Sources */,
 				AA49D78E1023CFDE003AB1DC /* DetailsViewController.m in Sources */,
 				AAFB4C081083D32D00B429E2 /* Reachability.m in Sources */,
+				AAA0F6081084DF66004C9956 /* NetAccessViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
