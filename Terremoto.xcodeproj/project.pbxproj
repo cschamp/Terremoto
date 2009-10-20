@@ -277,7 +277,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos3.0;
 			};
 			name = "App Store";
 		};
@@ -293,7 +293,7 @@
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos3.0;
 			};
 			name = "App Store";
 		};
