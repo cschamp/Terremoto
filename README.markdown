@@ -2,6 +2,8 @@
 Terremoto
 =========
 
+(Terremoto is now on the App Store)[http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=326157784&mt=8].
+
 Terremoto is a sample iPhone application that I wrote as an exercise in iPhone programming. It has given me exposure to Objective-C 2.0, which I can't use in my day job, where we need to support older Mac OS X platforms unsupported by Obj-C 2.0. Terremoto also gives me a chance to learn about iPhone programming. Although I use Cocoa at work, I don't write iPhone code, and, as mentioned above, supporting older Mac OS X versions means that I don't often have a chance to use the latest features in Cocoa. 
 
 [![](http://farm4.static.flickr.com/3566/3779173249_914199a9a4.jpg)](http://farm4.static.flickr.com/3566/3779173249_07a6c21212_o.png)
