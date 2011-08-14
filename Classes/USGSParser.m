@@ -92,9 +92,7 @@ static NSString *feedURLString = @"http://earthquake.usgs.gov/eqcenter/catalogs/
 	} else if ([elementName isEqualToString:@"link"]) {
 		// ignore the related content and just grab the alternate
 		if ([[attributeDict valueForKey:@"rel"] isEqualToString:@"alternate"]) {
-			NSString *link = [attributeDict valueForKey:@"href"];
-			self.currentEarthquake.detailsURL = 
-			[NSString stringWithFormat:@"http://earthquake.usgs.gov/%@", link];     // XXX Put constant DNS name in a header
+			self.currentEarthquake.detailsURL = [attributeDict valueForKey:@"href"];
 		}
 	} else if ([elementName isEqualToString:@"title"] || 
 		[elementName isEqualToString:@"updated"] ||
