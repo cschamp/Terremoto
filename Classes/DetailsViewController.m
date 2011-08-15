@@ -31,6 +31,10 @@
 	// XXX Do something. [schamp 20090801]
 }
 
+- (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
+    // Disallow any URL except for the URL used to create the original page.
+    return [request.URL isEqual:self.url];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
