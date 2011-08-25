@@ -197,6 +197,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Terremoto" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -264,6 +267,7 @@
 				GCC_PREFIX_HEADER = Terremoto_Prefix.pch;
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -277,7 +281,7 @@
 				GCC_PREFIX_HEADER = Terremoto_Prefix.pch;
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -290,9 +294,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "App Store";
@@ -309,7 +312,7 @@
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "661758F0-DDDD-4232-971D-514A277F6168";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "App Store";
@@ -322,9 +325,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E24AA56C-73A8-4B9D-9D31-D30797752D6D";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -341,7 +343,7 @@
 				INFOPLIST_FILE = "Terremoto-Info.plist";
 				PRODUCT_NAME = Terremoto;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E24AA56C-73A8-4B9D-9D31-D30797752D6D";
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
@@ -354,8 +356,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,8 +370,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = iphoneos5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
