@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIViewController.h>
 
 @interface DetailsViewController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 	UIWebView *webView;

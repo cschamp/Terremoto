@@ -62,7 +62,7 @@
 - (IBAction)doneButtonAction:(id)sender {
 	[self.webView stopLoading];
 	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-	[self dismissModalViewControllerAnimated:YES]; 
+	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (IBAction)actionButtonAction:(id)sender {

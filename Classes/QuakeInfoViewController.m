@@ -104,7 +104,7 @@
 	NSURL *url = [NSURL URLWithString:annot.earthquake.detailsURL];
 	DetailsViewController *detailsViewControl = [[[DetailsViewController alloc] init] autorelease];
 	detailsViewControl.url = url;
-	[self presentModalViewController:detailsViewControl animated:YES];
+	[self presentViewController:detailsViewControl animated:YES completion:NULL];
 }
 
 @end

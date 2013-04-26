@@ -6,6 +6,7 @@
 //  Copyright Craig Schamp 2009. All rights reserved.
 //
 
+#import <UIKit/UIViewController.h>
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "USGSParser.h"
