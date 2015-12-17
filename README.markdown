@@ -2,8 +2,6 @@
 Terremoto
 =========
 
-[Terremoto is now on the App Store](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=326157784&mt=8).
-
 Terremoto is a sample iPhone application that I wrote as an exercise in iPhone programming.
 
 [![](http://farm4.static.flickr.com/3566/3779173249_914199a9a4.jpg)](http://farm4.static.flickr.com/3566/3779173249_07a6c21212_o.png)
